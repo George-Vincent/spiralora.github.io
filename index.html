@@ -1,131 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SPIRALORA ART STUDIO — Simple design. Endless creativity. Distinctive art.">
-  <title>SPIRALORA | Art Studio</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      padding: 28px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #222;
-    }
-
-    .brand {
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 5px;
-    }
-
-    header span {
-      color: #999;
-      font-size: 12px;
-      letter-spacing: 2px;
-    }
-
-    main {
-      min-height: 78vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .hero {
-      max-width: 760px;
-    }
-
-    .eyebrow {
-      color: #aaa;
-      letter-spacing: 5px;
-      font-size: 12px;
-      margin-bottom: 30px;
-    }
-
-    h1 {
-      font-size: clamp(42px, 9vw, 88px);
-      letter-spacing: 8px;
-      margin-bottom: 25px;
-    }
-
-    .description {
-      color: #bbb;
-      font-size: 18px;
-      line-height: 1.8;
-      margin: 0 auto 35px;
-      max-width: 590px;
-    }
-
-    .tagline {
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    .line {
-      width: 55px;
-      height: 1px;
-      background: white;
-      margin: 35px auto;
-    }
-
-    footer {
-      border-top: 1px solid #222;
-      padding: 25px 15px;
-      text-align: center;
-      color: #777;
-      font-size: 12px;
-      letter-spacing: 1px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SPIRALORA ART STUDIO — Simple design. Endless creativity. Distinctive art.">
+<title>SPIRALORA | Art Studio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#050505;color:#fff;font-family:Arial,sans-serif}
+header{height:90px;padding:0 8%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #242424}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:48px;height:48px;object-fit:cover;border-radius:10px}
+.brand span{font-size:20px;font-weight:700;letter-spacing:5px}
+nav a{color:#bbb;text-decoration:none;margin-left:25px;font-size:12px;letter-spacing:1px}
+nav a:hover{color:#fff}
+.hero{min-height:650px;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px}
+.hero-content{max-width:780px}
+.hero-logo{width:150px;height:150px;object-fit:cover;border-radius:28px;margin-bottom:35px;box-shadow:0 0 60px #ffffff12}
+.eyebrow{font-size:11px;letter-spacing:5px;color:#aaa;margin-bottom:25px}
+h1{font-size:clamp(42px,8vw,76px);letter-spacing:9px;margin-bottom:25px}
+.description{color:#aaa;font-size:17px;line-height:1.9;max-width:590px;margin:auto}
+.line{width:55px;height:1px;background:#fff;margin:32px auto}
+.tagline{font-size:12px;letter-spacing:3px;color:#ddd}
+section.info{padding:100px 20px;text-align:center;border-top:1px solid #202020}
+.info h2{font-size:30px;letter-spacing:4px;margin-bottom:25px}
+.info p{max-width:650px;margin:auto;color:#999;line-height:2;font-size:15px}
+footer{border-top:1px solid #222;padding:30px 15px;text-align:center;color:#777;font-size:11px;letter-spacing:1px}
+@media(max-width:600px){
+header{padding:0 5%;height:75px}
+.brand img{width:38px;height:38px}
+.brand span{font-size:15px;letter-spacing:3px}
+nav a{margin-left:10px;font-size:10px}
+.hero{min-height:570px}
+.hero-logo{width:125px;height:125px}
+}
+</style>
 </head>
-
 <body>
+<header>
+<div class="brand">
+<img src="spiralora-logo.png" alt="SPIRALORA spiral logo">
+<span>SPIRALORA</span>
+</div>
+<nav>
+<a href="#home">HOME</a>
+<a href="#about">ABOUT</a>
+</nav>
+</header>
 
-  <header>
-    <div class="brand">SPIRALORA</div>
-    <span>ART STUDIO</span>
-  </header>
+<main id="home" class="hero">
+<div class="hero-content">
+<img class="hero-logo" src="spiralora-logo.png" alt="Official SPIRALORA logo">
+<p class="eyebrow">WELCOME TO OUR WORLD</p>
+<h1>SPIRALORA</h1>
+<p class="description">Transforming ordinary photographs and creative ideas into distinctive works of art.</p>
+<div class="line"></div>
+<p class="tagline">SIMPLE DESIGN. ENDLESS CREATIVITY. DISTINCTIVE ART.</p>
+</div>
+</main>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">WELCOME TO OUR WORLD</p>
+<section class="info" id="about">
+<h2>ABOUT SPIRALORA</h2>
+<p>SPIRALORA ART STUDIO brings creativity and technology together to transform photographs and ideas into distinctive artistic experiences. Our vision is to make creative expression accessible to everyone, everywhere.</p>
+</section>
 
-      <h1>SPIRALORA</h1>
-
-      <p class="description">
-        Transforming ordinary photographs and creative ideas
-        into distinctive works of art.
-      </p>
-
-      <div class="line"></div>
-
-      <p class="tagline">
-        Simple design. Endless creativity. Distinctive art.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    © 2026 SPIRALORA ART STUDIO. ALL RIGHTS RESERVED.
-  </footer>
-
+<footer>
+© 2026 SPIRALORA ART STUDIO. ALL RIGHTS RESERVED.
+</footer>
 </body>
 </html>
